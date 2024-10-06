@@ -12,7 +12,7 @@ function App() {
   useEffect(() => {
     (async () => {
       // types are not getting inferred for my client :(
-      const res = await client.api["expenses"].$get();
+      const res = await client.api.expenses.$get();
       const { total } = await res.json();
       setCount(total);
     })();
