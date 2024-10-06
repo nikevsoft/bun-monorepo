@@ -1,6 +1,9 @@
 {
   "private": true,
   "name": "bun-monorepo",
+  "scripts": {
+    "dev": "bun run --cwd packages/client dev & bun run --cwd packages/server dev"
+  },
   "workspaces": [
     "packages/*"
   ]
